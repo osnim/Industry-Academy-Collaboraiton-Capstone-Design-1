@@ -1,2 +1,2 @@
-# 산학협력 캡스톤 설계1 (with Advantech.corp)
+# 산학협력 캡스톤 설계1 (with Advantech)
 WISE-1510을 이용한 스마트 캠퍼스 구축
