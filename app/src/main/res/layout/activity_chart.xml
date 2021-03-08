@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2c6eb9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="0.9"
+    >
+
+    <TextView
+        android:id="@+id/TXTsensorcontrol"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="0.1"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Sensor Control"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:background="@drawable/round"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
